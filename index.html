@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="AppModule">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+
+<div ng-controller="MenuCtrl">
+    <ul>
+        <li ng-repeat="item in list">
+            <a ui-sref="{{item.url}}">{{item.label}}</a>
+        </li>
+    </ul>
+</div>
+<div ui-view>This content will be no more available</div>
+
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
